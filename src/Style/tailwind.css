@@ -6,3 +6,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.header{
+    background: url("../Components/Image/banner-bg.jpg")no-repeat center center/cover;
+}
+.header::after{
+    content: "";
+    left: 0;top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000091;
+}
+
+.about{
+        background: url("https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/section-wrapper-bg.jpg")no-repeat center center/cover;
+}

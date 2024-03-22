@@ -1,8 +1,10 @@
-import React from 'react'
+"use Client"
+import React, { useEffect, useRef } from 'react';
+import Header from './Header'
 
 const Hero = () => {
     return (
-        <div>mai hu don</div>
+        <><Header /></>
     )
 }
 
