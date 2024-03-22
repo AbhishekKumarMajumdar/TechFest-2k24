@@ -362,7 +362,7 @@ body.active {
 .hero {
     /* background:url("../Components/Image/banner-bg.jpg")no-repeat; */
     /* background: url("https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/hero-banner.jpg") no-repeat; */
-    background: url("https: //drive.google.com/file/d/1wywE_3CBrdcOk_1xuEqickdzEpRoca7C/view?usp=drive_link") no-repeat center center/cover;
+    background: url("https://github.com/AbhishekKumarMajumdar/TechFest-2k24/blob/main/src/Components/Image/bg.jpg?raw=true") no-repeat center center/cover;
     background-size: cover;
     background-position: top center;
     margin-top: 90px;
