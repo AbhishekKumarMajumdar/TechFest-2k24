@@ -60,12 +60,9 @@ const Navbar = () => {
 
 
                             <li>
-                                <a href="#gears" className="navbar-link">About</a>
+                                <a href="#about" className="navbar-link">About</a>
                             </li>
 
-                            <li>
-                                <a href="#contact" className="navbar-link">Contact</a>
-                            </li>
                         </ul>
 
                         <ul className="nav-social-list">

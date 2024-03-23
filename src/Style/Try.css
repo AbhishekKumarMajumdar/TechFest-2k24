@@ -645,9 +645,7 @@ body.active {
     border-color: var(--orange);
 }
 
-.team-member img {
-    width: 100%;
-}
+
 
 .team-member:is(:hover, :focus) img {
     opacity: 0.5;
@@ -1284,6 +1282,7 @@ body.active {
         gap: 30px;
         max-width: 440px;
         margin-inline: auto;
+        flex-direction: column;
     }
 
     .newsletter-img {

@@ -1,6 +1,52 @@
+"use client"
 import React from 'react'
 import Abhi from "@/Components/Image/Abhishek.jpg"
+import Gayatra from "@/Components/Image/Gayatra.jpg"
+import Akash from "@/Components/Image/Akash.jpg"
+import Jayent from "@/Components/Image/Jayent.jpg"
+import Prakhar from "@/Components/Image/Prakhar.jpg"
+import Aman from "@/Components/Image/Aman.jpg"
+import Image from 'next/image'
+import Link from 'next/link'
+
 const Team = () => {
+
+    const TeamMember = [
+        {
+            name: "Abhishek kumar Majumdar",
+            src: Abhi,
+            link: "https://in.linkedin.com/in/theabhishekmajumdar"
+        },
+        {
+            name: "Gayatra Bhatt",
+            src: Gayatra,
+            link: "https://in.linkedin.com/in/gayatha-bhatt"
+        }
+        ,
+
+        {
+            name: "Jayent",
+            src: Jayent,
+            link: "/"
+        }
+        ,
+        {
+            name: "Prakhar",
+            src: Prakhar,
+            link: "/"
+        },
+        {
+            name: "Aman",
+            src: Aman,
+            link: "/"
+        },
+        {
+            name: "Akash",
+            src: Akash,
+            link: "https://www.linkedin.com/in/akash-mehra-4279ab260/"
+        }
+
+    ]
     return (
         <>
             <section className="team" id="team">
@@ -8,148 +54,20 @@ const Team = () => {
                     <h2 className="h2 section-title">Event Organizing Team</h2>
 
                     <ul className="team-list">
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src={Abhi}
+                        {TeamMember.map((member) => (
+                            <li key={member.name} className="team-card">
+                                <Link href={member.link} className="team-member">
+                                    <figure className=' overflow-hidden lg:w-[150px] lg:h-[150px]'>
+                                        {/* <img
+                                        src="https://github.com/AbhishekKumarMajumdar/TechFest-2k24/blob/main/src/Components/Image/Abhishek.jpg?raw=true"
                                         alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-2.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-3.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-4.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-6.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-7.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-8.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-9.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-10.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-11.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="team-member">
-                                <figure>
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-12.png"
-                                        alt="Team member image"
-                                    />
-                                </figure>
-
-                                <ion-icon name="link-outline"></ion-icon>
-                            </a>
-                        </li>
+                                    /> */}
+                                        <Image src={member.src} className='!relative w-[100px] h-[100px] rounded-[50%]' layout="fill" alt='abhi' />
+                                    </figure>
+                                    <ion-icon name="link-outline"></ion-icon>
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
 
                     <button className="btn btn-primary">view all members</button>

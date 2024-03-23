@@ -2,7 +2,9 @@ import React from 'react'
 import '../Style/Try.css'
 import Event from './Event'
 import Team from './Team'
-
+import About from './About'
+import Image from 'next/image'
+import img from '@/Components/Image/pngwing.com (10).png'
 const Try = () => {
     return (
         <>
@@ -42,56 +44,7 @@ const Try = () => {
                           - #ABOUT
         --> */}
 
-                            <section className="about" id="about">
-                                <div className="container">
-                                    <figure className="about-banner">
-                                        <img
-                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/about-img.png"
-                                            alt="M shape"
-                                            className="about-img"
-                                        />
-
-                                        <img
-                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/character-1.png"
-                                            alt="Game character"
-                                            className="character character-1"
-                                        />
-
-                                        <img
-                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/character-2.png"
-                                            alt="Game character"
-                                            className="character character-2"
-                                        />
-
-                                        <img
-                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/character-3.png"
-                                            alt="Game character"
-                                            className="character character-3"
-                                        />
-                                    </figure>
-
-                                    <div className="about-content">
-                                        <p className="about-subtitle">Find team member</p>
-
-                                        <h2 className="about-title">
-                                            Experience just for gamers <strong>offer</strong>
-                                        </h2>
-
-                                        <p className="about-text">
-                                            Nullam quis ante. Maecenas ullamcorper, dui et placerat feugiat,
-                                            eros pede varius nisi, condimentum viverra felis nunc et lorem.
-                                            In auctor lobortis lacus. Phasellus gravida semper nisi. Aliquam
-                                            lobortis.
-                                        </p>
-
-                                        <p className="about-bottom-text">
-                                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-
-                                            <span>Will sharpen your brain and focus</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </section>
+                            <About />
 
                             {/* <!--
                           - #TOURNAMENT
@@ -214,31 +167,28 @@ const Try = () => {
 
                             <section className="newsletter">
                                 <div className="container">
-                                    <div className="newsletter-card">
-                                        <div className="newsletter-content">
-                                            <figure className="newsletter-img">
+
+                                    <div className="newsletter-card flex justify-center items-center md:flex-row flex-col">
+                                        <img
+                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/newsletter-img.png"
+                                            alt="Newsletter image"
+                                        />
+                                        <h2 className="h2 newsletter-title px-0 md:px-1 text-center">Dive into Innovation: Experience Astra-X, Our 3-Day Tech Fest!</h2>
+                                        <img className='hidden md:block'
+                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/newsletter-img.png"
+                                            alt="Newsletter image"
+                                        />
+
+
+                                        {/* <div className="newsletter-content">
+                                            <figure className="newsletter-img flex justify-center items-center">
                                                 <img
                                                     src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/newsletter-img.png"
                                                     alt="Newsletter image"
                                                 />
                                             </figure>
-
-                                            <h2 className="h2 newsletter-title">Join our 3 days Tech fest</h2>
-                                        </div>
-
-                                        <form action="" className="newsletter-form">
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                required
-                                                placeholder="Your Email Address"
-                                                className="input-field"
-                                            />
-
-                                            <button type="submit" className="btn btn-secondary">
-                                                Subscribe
-                                            </button>
-                                        </form>
+                                            <h2 className="h2 newsletter-title">Dive into Innovation: Experience Astra-X, Our 3-Day Tech Fest!</h2>
+                                        </div> */}
                                     </div>
                                 </div>
                             </section>
@@ -250,123 +200,7 @@ const Try = () => {
               - #FOOTER
   --> */}
 
-                <footer>
-                    <div className="footer-top">
-                        <div className="container">
-                            <div className="footer-brand-wrapper">
-                                <a href="#" className="logo">
-                                    <img
-                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/244de1829b8ad4249fcf160fc8cdaa4cc25db7ba/assets/images/logo.svg"
-                                        alt="GameX logo"
-                                    />
-                                </a>
 
-                                <div className="footer-menu-wrapper">
-                                    <ul className="footer-menu-list">
-                                        <li>
-                                            <a href="#hero" className="footer-menu-link">Home</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#about" className="footer-menu-link">About</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#tournament" className="footer-menu-link">Tournament</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#team" className="footer-menu-link">Team</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#gears" className="footer-menu-link">Gears</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="footer-menu-link">Contact</a>
-                                        </li>
-                                    </ul>
-
-                                    <div className="footer-input-wrapper">
-                                        <input
-                                            type="text"
-                                            name="message"
-                                            required
-                                            placeholder="Find Here Now"
-                                            className="footer-input"
-                                        />
-
-                                        <button className="btn btn-primary">
-                                            <ion-icon name="search-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="footer-quicklinks">
-                                <ul className="quicklink-list">
-                                    <li>
-                                        <a href="#" className="quicklink-item">Faq</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="quicklink-item">Help center</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="quicklink-item">Terms of use</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="quicklink-item">Privacy</a>
-                                    </li>
-                                </ul>
-
-                                <ul className="footer-social-list">
-                                    <li>
-                                        <a href="#" className="footer-social-link">
-                                            <ion-icon name="logo-discord"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="footer-social-link">
-                                            <ion-icon name="logo-twitch"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="footer-social-link">
-                                            <ion-icon name="logo-xbox"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" className="footer-social-link">
-                                            <ion-icon name="logo-youtube"></ion-icon>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="footer-bottom">
-                        <div className="container">
-                            <p className="copyright">
-                                Copyright &copy; 2023 <a href="#">Ted Martins</a>. all rights reserved
-                            </p>
-
-                            <figure className="footer-bottom-img">
-                                <img
-                                    src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/footer-bottom-img.png"
-                                    alt="Online payment companies logo"
-                                />
-                            </figure>
-                        </div>
-                    </div>
-                </footer>
 
 
 
