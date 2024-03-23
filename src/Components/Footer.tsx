@@ -1,5 +1,10 @@
 "use client"
 import React from 'react'
+import { IoSearch } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -43,7 +48,7 @@ const Footer = () => {
                                 />
 
                                 <button className="btn btn-primary">
-                                    <ion-icon name="search-outline"></ion-icon>
+                                    <IoSearch />
                                 </button>
                             </div>
                         </div>
@@ -71,25 +76,25 @@ const Footer = () => {
                         <ul className="footer-social-list">
                             <li>
                                 <a href="#" className="footer-social-link">
-                                    <ion-icon name="logo-discord"></ion-icon>
+                                    <FaInstagram />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="footer-social-link">
-                                    <ion-icon name="logo-twitch"></ion-icon>
+                                    <FaFacebook />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="footer-social-link">
-                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <FaLinkedinIn />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="footer-social-link">
-                                    <ion-icon name="logo-youtube"></ion-icon>
+                                    <IoLogoYoutube />
                                 </a>
                             </li>
                         </ul>

@@ -2,6 +2,9 @@
 import React from 'react'
 import Hackathon from '@/Components/Image/bg.jpg'
 import Link from 'next/link';
+import { LuClock3 } from "react-icons/lu";
+import { LuPlus } from "react-icons/lu";
+
 const Event = () => {
 
     const AllEvents = [
@@ -80,8 +83,7 @@ const Event = () => {
                                             />
                                         </a>
                                         <div className="card-time-wrapper">
-                                            <ion-icon name="time-outline"></ion-icon>
-
+                                            <LuClock3 />
                                             <span>In 4 days</span>
                                         </div>
                                     </div>
@@ -95,7 +97,8 @@ const Event = () => {
 
                                     <div className="card-actions">
                                         <button className="btn btn-primary">
-                                            <ion-icon name="add-outline"></ion-icon>
+                                            {/* <ion-icon name="add-outline"></ion-icon> */}
+                                            <LuPlus />
 
                                             <Link href={e.link}><span>Explore</span></Link>
                                         </button>

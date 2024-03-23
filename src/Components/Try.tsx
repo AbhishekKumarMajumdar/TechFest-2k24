@@ -4,14 +4,12 @@ import Event from './Event'
 import Team from './Team'
 import About from './About'
 import Image from 'next/image'
-import img from '@/Components/Image/pngwing.com (10).png'
+import { FaCirclePlay } from "react-icons/fa6";
 const Try = () => {
     return (
         <>
             <div id="top">
-                {/* <!--
-              - #HEADER
-  --> */}
+
 
 
 
@@ -30,8 +28,8 @@ const Try = () => {
                                 <div className="btn-group">
                                     <button className="btn btn-primary">
                                         <span>Explore Event</span>
+                                        <FaCirclePlay />
 
-                                        <ion-icon name="play-circle"></ion-icon>
                                     </button>
 
                                     <button className="btn btn-link">Dream making</button>
@@ -199,17 +197,8 @@ const Try = () => {
                 {/* <!--
               - #FOOTER
   --> */}
-
-
-
-
-
-                <a href="#top" className="btn btn-primary go-top" data-go-top>
-                    <ion-icon name="chevron-up-outline"></ion-icon>
-                </a>
             </div>
-            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
         </>
     )
 }

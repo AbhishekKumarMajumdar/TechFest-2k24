@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import Img1 from "@/Components/Image/pngwing.com (9).png"
+import { FaArrowCircleRight } from "react-icons/fa";
+
 const About = () => {
     return (
         <section className="about" id="about">
@@ -42,12 +44,11 @@ const About = () => {
                     </h2>
 
                     <p className="about-text">
-                        Participation is highly encouraged, Register now, we assure you that you'll make some beautiful memories in the process
+                        Participation is highly encouraged, Register now, we assure you that you will make some beautiful memories in the process
                     </p>
 
                     <p className="about-bottom-text">
-                        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-
+                        <FaArrowCircleRight className='mt-1 text-[18px]' color='rgb(255, 134, 5)' />
                         <span>Will sharpen your brain and focus</span>
                     </p>
                 </div>

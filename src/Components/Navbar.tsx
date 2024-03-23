@@ -1,5 +1,14 @@
 "use client";
 import React from 'react'
+import { IoSearch } from "react-icons/io5";
+import { IoMdMenu } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { CiLogin } from "react-icons/ci";
+
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = React.useState<Boolean>(false);
@@ -9,9 +18,6 @@ const Navbar = () => {
 
         <>
             <header className="header z-50">
-                {/* <!--
-                  - overlay
-    --> */}
                 <div className={`overlay `} data-overlay></div>
 
                 <div className="container">
@@ -24,7 +30,7 @@ const Navbar = () => {
                     </a>
 
                     <button onClick={() => setIsOpen(!isOpen)} className="nav-open-btn" data-nav-open-btn>
-                        <ion-icon name="menu-outline"></ion-icon>
+                        <IoMdMenu />
                     </button>
 
                     <nav className={`navbar  ${isOpen ? 'visible right-0' : 'invisible -right-[300px]'}`} data-nav>
@@ -40,7 +46,7 @@ const Navbar = () => {
                             </a>
 
                             <button onClick={() => setIsOpen(!isOpen)} className="nav-close-btn" data-nav-close-btn>
-                                <ion-icon name="close-outline"></ion-icon>
+                                <IoCloseSharp />
                             </button>
                         </div>
 
@@ -68,25 +74,25 @@ const Navbar = () => {
                         <ul className="nav-social-list">
                             <li>
                                 <a href="#" className="social-link">
-                                    <ion-icon name="logo-twitter"></ion-icon>
+                                    <FaInstagram />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="social-link">
-                                    <ion-icon name="logo-instagram"></ion-icon>
+                                    <FaFacebook />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="social-link">
-                                    <ion-icon name="logo-github"></ion-icon>
+                                    <FaLinkedinIn />
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" className="social-link">
-                                    <ion-icon name="logo-youtube"></ion-icon>
+                                    <IoLogoYoutube />
                                 </a>
                             </li>
                         </ul>
@@ -94,12 +100,12 @@ const Navbar = () => {
 
                     <div className="header-actions">
                         <button className="search">
-                            <ion-icon name="search-outline"></ion-icon>
+                            <IoSearch />
                         </button>
 
                         <button className="btn-sign_in">
                             <div className="icon-box">
-                                <ion-icon name="log-in-outline"></ion-icon>
+                                <CiLogin />
                             </div>
 
                             <span>Registration</span>

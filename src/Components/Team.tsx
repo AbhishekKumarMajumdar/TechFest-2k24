@@ -8,6 +8,7 @@ import Prakhar from "@/Components/Image/Prakhar.jpg"
 import Aman from "@/Components/Image/Aman.jpg"
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaLink } from "react-icons/fa6";
 
 const Team = () => {
 
@@ -64,7 +65,7 @@ const Team = () => {
                                     /> */}
                                         <Image src={member.src} className='!relative w-[100px] h-[100px] rounded-[50%]' layout="fill" alt='abhi' />
                                     </figure>
-                                    <ion-icon name="link-outline"></ion-icon>
+
                                 </Link>
                             </li>
                         ))}
