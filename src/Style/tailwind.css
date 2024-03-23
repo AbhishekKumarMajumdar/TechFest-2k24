@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 
-.header{
+/* .header{
     background: url("../Components/Image/banner-bg.jpg")no-repeat center center/cover;
 }
 .header::after{
@@ -22,4 +22,4 @@
 
 .about{
         background: url("https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/section-wrapper-bg.jpg")no-repeat center center/cover;
-}
+} */

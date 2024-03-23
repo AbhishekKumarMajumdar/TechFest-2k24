@@ -1,5 +1,7 @@
 import React from 'react'
 import '../Style/Try.css'
+import Event from './Event'
+import Team from './Team'
 
 const Try = () => {
     return (
@@ -203,303 +205,11 @@ const Try = () => {
 
 
 
-                            <section className="team" id="team">
-                                <div className="container">
-                                    <h2 className="h2 section-title">Active Team Members</h2>
-
-                                    <ul className="team-list">
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-1.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-2.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-3.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-4.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-6.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-7.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-8.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-9.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-10.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-11.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" className="team-member">
-                                                <figure>
-                                                    <img
-                                                        src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/team-member-12.png"
-                                                        alt="Team member image"
-                                                    />
-                                                </figure>
-
-                                                <ion-icon name="link-outline"></ion-icon>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                    <button className="btn btn-primary">view all members</button>
-                                </div>
-                            </section>
 
 
 
-                            <section className="gears" id="gears">
-                                <div className="container">
-                                    <h2 className="h2 section-title">check our gears</h2>
-
-                                    <ul className="gears-list">
-                                        <li>
-                                            <div className="gears-card">
-                                                <div className="card-banner">
-                                                    <a href="#">
-                                                        <img
-                                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/gears-img-1.png"
-                                                            alt="Headphone"
-                                                        />
-                                                    </a>
-
-                                                    <button className="share">
-                                                        <ion-icon name="share-social"></ion-icon>
-                                                    </button>
-
-                                                    <div className="card-time-wrapper">
-                                                        <ion-icon name="time-outline"></ion-icon>
-
-                                                        <span>In 4 days</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className="card-content">
-                                                    <div className="card-title-wrapper">
-                                                        <h3 className="h3 card-title">Headphone</h3>
-
-                                                        <p className="card-subtitle">e-sports</p>
-                                                    </div>
-
-                                                    <div className="card-prize">$18</div>
-                                                </div>
-
-                                                <div className="card-actions">
-                                                    <button className="btn btn-primary">
-                                                        <ion-icon name="add-outline"></ion-icon>
-
-                                                        <span>Add to cart</span>
-                                                    </button>
-
-                                                    <button className="btn card-btn">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div className="gears-card">
-                                                <div className="card-banner">
-                                                    <a href="#">
-                                                        <img
-                                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/gears-img-2.png"
-                                                            alt="Controller"
-                                                        />
-                                                    </a>
-
-                                                    <button className="share">
-                                                        <ion-icon name="share-social"></ion-icon>
-                                                    </button>
-
-                                                    <div className="card-time-wrapper">
-                                                        <ion-icon name="time-outline"></ion-icon>
-
-                                                        <span>In 4 days</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className="card-content">
-                                                    <div className="card-title-wrapper">
-                                                        <h3 className="h3 card-title">Controller</h3>
-
-                                                        <p className="card-subtitle">e-sports</p>
-                                                    </div>
-
-                                                    <div className="card-prize">$29</div>
-                                                </div>
-
-                                                <div className="card-actions">
-                                                    <button className="btn btn-primary">
-                                                        <ion-icon name="add-outline"></ion-icon>
-
-                                                        <span>Add to cart</span>
-                                                    </button>
-
-                                                    <button className="btn card-btn">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div className="gears-card">
-                                                <div className="card-banner">
-                                                    <a href="#">
-                                                        <img
-                                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/gears-img-3.png"
-                                                            alt="Gaming mask"
-                                                        />
-                                                    </a>
-
-                                                    <button className="share">
-                                                        <ion-icon name="share-social"></ion-icon>
-                                                    </button>
-
-                                                    <div className="card-time-wrapper">
-                                                        <ion-icon name="time-outline"></ion-icon>
-
-                                                        <span>In 4 days</span>
-                                                    </div>
-                                                </div>
-
-                                                <div className="card-content">
-                                                    <div className="card-title-wrapper">
-                                                        <h3 className="h3 card-title">Gaming mask</h3>
-
-                                                        <p className="card-subtitle">e-sports</p>
-                                                    </div>
-
-                                                    <div className="card-prize">$45</div>
-                                                </div>
-
-                                                <div className="card-actions">
-                                                    <button className="btn btn-primary">
-                                                        <ion-icon name="add-outline"></ion-icon>
-
-                                                        <span>Add to cart</span>
-                                                    </button>
-
-                                                    <button className="btn card-btn">
-                                                        <ion-icon name="heart-outline"></ion-icon>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </section>
+                            <Team />
+                            <Event />
 
 
                             <section className="newsletter">
@@ -513,7 +223,7 @@ const Try = () => {
                                                 />
                                             </figure>
 
-                                            <h2 className="h2 newsletter-title">Subscribe to our newsletter</h2>
+                                            <h2 className="h2 newsletter-title">Join our 3 days Tech fest</h2>
                                         </div>
 
                                         <form action="" className="newsletter-form">
@@ -664,7 +374,8 @@ const Try = () => {
                     <ion-icon name="chevron-up-outline"></ion-icon>
                 </a>
             </div>
-
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         </>
     )
 }

@@ -276,13 +276,11 @@ body.active {
 .navbar {
     position: fixed;
     top: 0;
-    right: -300px;
     width: 100%;
     max-width: 300px;
     background: var(--raisin-black-2);
     height: 100%;
     box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.5);
-    visibility: hidden;
     z-index: 2;
     transition: var(--transition-2);
 }
@@ -362,7 +360,7 @@ body.active {
 .hero {
     /* background:url("../Components/Image/banner-bg.jpg")no-repeat; */
     /* background: url("https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/hero-banner.jpg") no-repeat; */
-    background: url("https://github.com/AbhishekKumarMajumdar/TechFest-2k24/blob/main/src/Components/Image/bg.jpg?raw=true") no-repeat center center/cover;
+    background: url("https://github.com/AbhishekKumarMajumdar/TechFest-2k24/blob/main/src/Components/Image/bg2.png?raw=true") no-repeat center center/cover;
     background-size: cover;
     background-position: top center;
     margin-top: 90px;
@@ -697,6 +695,7 @@ body.active {
     display: grid;
     place-items: center;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .gears .card-banner a {
@@ -704,8 +703,9 @@ body.active {
 }
 
 .gears .card-banner img {
-    width: 45%;
+    width: 100%;
     margin-inline: auto;
+    height: 100%;
 }
 
 .share,

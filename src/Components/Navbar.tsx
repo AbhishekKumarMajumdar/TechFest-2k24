@@ -4,14 +4,15 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = React.useState<Boolean>(false);
 
+
     return (
 
         <>
-            <header className="header">
+            <header className="header z-50">
                 {/* <!--
                   - overlay
     --> */}
-                <div className="overlay" data-overlay></div>
+                <div className={`overlay `} data-overlay></div>
 
                 <div className="container">
                     <a href="#" className="logo">
@@ -22,35 +23,38 @@ const Navbar = () => {
                         <h1 className='text-white font-mono font-extrabold text-4xl '>Astra-X</h1>
                     </a>
 
-                    <button className="nav-open-btn" data-nav-open-btn>
+                    <button onClick={() => setIsOpen(!isOpen)} className="nav-open-btn" data-nav-open-btn>
                         <ion-icon name="menu-outline"></ion-icon>
                     </button>
 
-                    <nav className="navbar" data-nav>
+                    <nav className={`navbar  ${isOpen ? 'visible right-0' : 'invisible -right-[300px]'}`} data-nav>
                         <div className="navbar-top">
                             <a href="#" className="logo">
-                                <img
+                                {/* <img
                                     src="https://raw.githubusercontent.com/codewithsadee/gamex/244de1829b8ad4249fcf160fc8cdaa4cc25db7ba/assets/images/logo.svg"
                                     alt="GameX logo"
-                                />
+                                /> */}
+                                <h1 className='text-white font-mono font-extrabold text-4xl '>Astra-X</h1>
+
+
                             </a>
 
-                            <button className="nav-close-btn" data-nav-close-btn>
+                            <button onClick={() => setIsOpen(!isOpen)} className="nav-close-btn" data-nav-close-btn>
                                 <ion-icon name="close-outline"></ion-icon>
                             </button>
                         </div>
 
-                        <ul className="navbar-list">
+                        <ul className={`navbar-list `} >
                             <li>
                                 <a href="#hero" className="navbar-link">Home</a>
                             </li>
 
                             <li>
-                                <a href="#about" className="navbar-link">Event</a>
+                                <a href="#gears" className="navbar-link">Event</a>
                             </li>
 
                             <li>
-                                <a href="#tournament" className="navbar-link">ORGANIZING COMMITTEE</a>
+                                <a href="#team" className="navbar-link">ORGANIZING COMMITTEE</a>
                             </li>
 
 
