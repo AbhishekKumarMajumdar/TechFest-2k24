@@ -4,6 +4,7 @@ import Hackathon from '@/Components/Image/bg.jpg'
 import Link from 'next/link';
 import { LuClock3 } from "react-icons/lu";
 import { LuPlus } from "react-icons/lu";
+import Image from 'next/image';
 
 const Event = () => {
 
@@ -76,10 +77,12 @@ const Event = () => {
                                 <div className="gears-card">
                                     <div className="card-banner">
                                         <a href="#">
-                                            <img
+                                            <Image
                                                 // src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/gears-img-1.png"
                                                 src="https://github.com/AbhishekKumarMajumdar/TechFest-2k24/blob/main/src/Components/Image/bg2.png?raw=true"
                                                 alt="Headphone"
+                                                fill={true}
+                                                className='!relative'
                                             />
                                         </a>
                                         <div className="card-time-wrapper">

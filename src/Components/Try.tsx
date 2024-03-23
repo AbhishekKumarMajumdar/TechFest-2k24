@@ -38,15 +38,10 @@ const Try = () => {
                         </section>
 
                         <div className="section-wrapper">
-                            {/* <!--
-                          - #ABOUT
-        --> */}
 
                             <About />
 
-                            {/* <!--
-                          - #TOURNAMENT
-        --> */}
+
 
                             <section className="tournament" id="tournament">
                                 <div className="container">
@@ -69,9 +64,12 @@ const Try = () => {
                                         <data value="80000">$80000</data>
 
                                         <figure>
-                                            <img
+                                            <Image
                                                 src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/prize-img.png"
                                                 alt="Prize image"
+                                                className='!relative'
+                                                fill={true}
+
                                             />
                                         </figure>
                                     </div>
@@ -83,9 +81,11 @@ const Try = () => {
                                             <li>
                                                 <div className="winner-card">
                                                     <figure className="card-banner">
-                                                        <img
+                                                        <Image
                                                             src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/winner-img-1.png"
                                                             alt="Winner image"
+                                                            className='!relative'
+                                                            fill={true}
                                                         />
                                                     </figure>
 
@@ -96,9 +96,11 @@ const Try = () => {
                                             <li>
                                                 <div className="winner-card">
                                                     <figure className="card-banner">
-                                                        <img
+                                                        <Image
                                                             src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/winner-img-2.png"
                                                             alt="Winner image"
+                                                            className='!relative'
+                                                            fill={true}
                                                         />
                                                     </figure>
 
@@ -117,36 +119,44 @@ const Try = () => {
                                     <ul className="gallery-list has-scrollbar">
                                         <li>
                                             <figure className="gallery-item">
-                                                <img
+                                                <Image
                                                     src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/gallery-img-1.jpg"
                                                     alt="Gallery image"
+                                                    fill={true}
+                                                    className='!relative'
                                                 />
                                             </figure>
                                         </li>
 
                                         <li>
                                             <figure className="gallery-item">
-                                                <img
+                                                <Image
                                                     src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/gallery-img-2.jpg"
                                                     alt="Gallery image"
+                                                    fill={true}
+                                                    className='!relative'
                                                 />
                                             </figure>
                                         </li>
 
                                         <li>
                                             <figure className="gallery-item">
-                                                <img
+                                                <Image
                                                     src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/gallery-img-3.jpg"
                                                     alt="Gallery image"
+                                                    fill={true}
+                                                    className='!relative'
                                                 />
                                             </figure>
                                         </li>
 
                                         <li>
                                             <figure className="gallery-item">
-                                                <img
+                                                <Image
                                                     src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/gallery-img-4.jpg"
                                                     alt="Gallery image"
+                                                    fill={true}
+                                                    className='!relative'
                                                 />
                                             </figure>
                                         </li>
@@ -167,15 +177,9 @@ const Try = () => {
                                 <div className="container">
 
                                     <div className="newsletter-card flex justify-center items-center md:flex-row flex-col">
-                                        <img
-                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/newsletter-img.png"
-                                            alt="Newsletter image"
-                                        />
+
                                         <h2 className="h2 newsletter-title px-0 md:px-1 text-center">Dive into Innovation: Experience Astra-X, Our 3-Day Tech Fest!</h2>
-                                        <img className='hidden md:block'
-                                            src="https://raw.githubusercontent.com/codewithsadee/gamex/master/assets/images/newsletter-img.png"
-                                            alt="Newsletter image"
-                                        />
+
 
 
                                         {/* <div className="newsletter-content">

@@ -59,10 +59,6 @@ const Team = () => {
                             <li key={member.name} className="team-card">
                                 <Link href={member.link} className="team-member">
                                     <figure className=' overflow-hidden lg:w-[150px] lg:h-[150px]'>
-                                        {/* <img
-                                        src="https://github.com/AbhishekKumarMajumdar/TechFest-2k24/blob/main/src/Components/Image/Abhishek.jpg?raw=true"
-                                        alt="Team member image"
-                                    /> */}
                                         <Image src={member.src} className='!relative w-[100px] h-[100px] rounded-[50%]' layout="fill" alt='abhi' />
                                     </figure>
 
